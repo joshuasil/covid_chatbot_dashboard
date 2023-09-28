@@ -1,0 +1,9 @@
+psycopg2-binary==2.9.6
+gunicorn==20.1.0
+dash
+pillow
+sqlalchemy
+python-dotenv
+pandas
+dash_bootstrap_components
+dash_bootstrap_templates
