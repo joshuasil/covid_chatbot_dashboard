@@ -393,7 +393,7 @@ dbc_css = (
 )
 app = Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP, dbc_css])
 
-#server = app.server
+server = app.server
 
 app.layout = html.Div(style={'padding':10, 'backgroundColor': colors['background']}, children =[html.Div(navbar),html.Div(dropdown,style={'textAlign': 'center',"line-height":'2px'}),
         #dbc.Row(ThemeChangerAIO(aio_id="theme", radio_props={"value":dbc.themes.FLATLY})),
