@@ -29,7 +29,7 @@ engine = create_engine(postgres_str, echo=False)
 conn = engine.connect()
 
 ## Creating our Dataframe
-sql_select_query = text('''SELECT * FROM public.logs;''')
+sql_select_query = text('''SELECT * FROM public.covid_logs;''')
 
 sqlresult = conn.execute(sql_select_query)
 df_comp = pd.DataFrame(sqlresult.fetchall())
